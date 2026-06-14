@@ -1,0 +1,7 @@
+*.class
+
+.vscode/
+*.code-workspace
+
+input.txt
+output.txt
