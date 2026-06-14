@@ -39,8 +39,7 @@ Following the Striver A2Z DSA Sheet:
 DSA-JAVA/
 │
 ├── Patterns/
-├── input.txt
-├── output.txt
+|
 └── README.md
 ```
 
