@@ -56,7 +56,7 @@ More folders will be added as I progress through the roadmap.
 ## Progress Tracker
 
 * [x] Things to Know in Java
-* [ ] Patterns
+* [x] Patterns
 * [ ] Basic Maths
 * [ ] Recursion
 * [ ] Hashing
