@@ -11,3 +11,10 @@ import java.util.*;
         System.out.println(c);
     }
  }
+ /*
+ 
+ if input is 123456
+ itll be divided by 10 until it becomes 0
+ hence here the no of time the input gets divided equals the total no digits
+ so op will be 6
+ */
