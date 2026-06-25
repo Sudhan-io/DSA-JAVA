@@ -364,6 +364,18 @@ Concepts Learned
 
 ## 19. Hollow Diamond
 
+```
+**********
+****  ****
+***    ***
+**      **
+*        *
+*        *
+**      **
+***    ***
+****  ****
+**********
+```
 Concepts Learned
 
 - Boundary conditions
@@ -373,6 +385,17 @@ Concepts Learned
 
 ## 20. Butterfly Pattern
 
+```
+*        *
+**      **
+***    ***
+****  ****
+**********
+****  ****
+***    ***
+**      **
+*        *
+```
 Concepts Learned
 
 - Left stars
