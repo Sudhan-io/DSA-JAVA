@@ -511,21 +511,21 @@ or
 
 Can I solve these without looking?
 
-- [ ] Square
-- [ ] Triangle
-- [ ] Reverse Triangle
-- [ ] Pyramid
-- [ ] Inverted Pyramid
-- [ ] Diamond
-- [ ] Half Diamond
-- [ ] Floyd Triangle
-- [ ] Binary Triangle
-- [ ] Number Crown
-- [ ] Butterfly
-- [ ] Hollow Rectangle
-- [ ] Hollow Diamond
-- [ ] Concentric Square
-- [ ] Alphabet Patterns
+- [x] Square
+- [x] Triangle
+- [x] Reverse Triangle
+- [x] Pyramid
+- [x] Inverted Pyramid
+- [x] Diamond
+- [x] Half Diamond
+- [x] Floyd Triangle
+- [x] Binary Triangle
+- [x] Number Crown
+- [x] Butterfly
+- [x] Hollow Rectangle
+- [x] Hollow Diamond
+- [x] Concentric Square
+- [x] Alphabet Patterns
 
 
 ---
