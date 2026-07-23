@@ -21,30 +21,30 @@ These exercises serve as the foundation for matrix traversal, coordinate-based t
 
 # Pattern Index
 
-| # | Pattern | Core Idea | Source |
-|---|----------|-----------|--------|
-| 1 | Square Pattern | Fixed rows × fixed columns | [star1.java](./star1.java) |
-| 2 | Increasing Triangle | Columns depend on current row (`j <= i`) | [star2.java](./Star2.java) |
-| 3 | Increasing Number Triangle | Print column number instead of `*` | [star3.java](./star3.java) |
-| 4 | Repeating Number Triangle | Print current row number | [star4.java](./star4.java) |
-| 5 | Decreasing Triangle | Columns decrease with each row | [star5.java](./star5.java) |
-| 6 | Decreasing Number Triangle | Reverse number triangle | [star6.java](./star6.java) |
-| 7 | Pyramid | Leading spaces + odd number of stars | [star7.java](./star7.java) |
-| 8 | Inverted Pyramid | Reverse pyramid logic | [star8.java](./star8.java) |
-| 9 | Diamond | Pyramid + Inverted Pyramid | [star9.java](./star9.java) |
-| 10 | Half Diamond | Increasing triangle + decreasing triangle | [star10.java](./star10.java) |
-| 11 | Binary Triangle | Alternate 0 and 1 using parity | [star11.java](./star11.java) |
-| 12 | Number Crown | Mirror symmetry with spaces | [star12.java](./star12.java) |
-| 13 | Floyd's Triangle | Running counter across rows | [star13.java](./star13.java) |
-| 14 | Alphabet Triangle | Sequential characters | [star14.java](./star14.java) |
-| 15 | Reverse Alphabet Triangle | Characters with decreasing columns | [star15.java](./star15.java) |
-| 16 | Repeating Alphabet Triangle | Repeat current alphabet | [star16.java](./star16.java) |
-| 17 | Alphabet Pyramid | Increasing then decreasing characters | [star17.java](./star17.java) |
-| 18 | Reverse Alphabet Pattern | Character offset calculation | [star18.java](./star18.java) |
-| 19 | Hollow Diamond | Boundary-based printing | [star19.java](./star19.java) |
-| 20 | Butterfly Pattern | Two mirrored triangles | [star20.java](./star20.java) |
-| 21 | Hollow Rectangle | Print only border cells | [star21.java](./star21.java) |
-| 22 | Concentric Square | Minimum distance from boundary | [star22.java](./star22.java) |
+| # | Pattern | Core Idea | Time | Space | Source |
+|---|----------|-----------|------|-------|--------|
+| 1 | Square Pattern | Fixed rows × fixed columns | `O(N^2)` | `O(1)` | [star1.java](./star1.java) |
+| 2 | Increasing Triangle | Columns depend on current row (`j <= i`) | `O(N^2)` | `O(1)` | [Star2.java](./Star2.java) |
+| 3 | Increasing Number Triangle | Print column number instead of `*` | `O(N^2)` | `O(1)` | [star3.java](./star3.java) |
+| 4 | Repeating Number Triangle | Print current row number | `O(N^2)` | `O(1)` | [star4.java](./star4.java) |
+| 5 | Decreasing Triangle | Columns decrease with each row | `O(N^2)` | `O(1)` | [star5.java](./star5.java) |
+| 6 | Decreasing Number Triangle | Reverse number triangle | `O(N^2)` | `O(1)` | [star6.java](./star6.java) |
+| 7 | Pyramid | Leading spaces + odd number of stars | `O(N^2)` | `O(1)` | [star7.java](./star7.java) |
+| 8 | Inverted Pyramid | Reverse pyramid logic | `O(N^2)` | `O(1)` | [star8.java](./star8.java) |
+| 9 | Diamond | Pyramid + Inverted Pyramid | `O(N^2)` | `O(1)` | [star9.java](./star9.java) |
+| 10 | Half Diamond | Increasing triangle + decreasing triangle | `O(N^2)` | `O(1)` | [star10.java](./star10.java) |
+| 11 | Binary Triangle | Alternate 0 and 1 using parity | `O(N^2)` | `O(1)` | [star11.java](./star11.java) |
+| 12 | Number Crown | Mirror symmetry with spaces | `O(N^2)` | `O(1)` | [star12.java](./star12.java) |
+| 13 | Floyd's Triangle | Running counter across rows | `O(N^2)` | `O(1)` | [star13.java](./star13.java) |
+| 14 | Alphabet Triangle | Sequential characters | `O(N^2)` | `O(1)` | [star14.java](./star14.java) |
+| 15 | Reverse Alphabet Triangle | Characters with decreasing columns | `O(N^2)` | `O(1)` | [star15.java](./star15.java) |
+| 16 | Repeating Alphabet Triangle | Repeat current alphabet | `O(N^2)` | `O(1)` | [star16.java](./star16.java) |
+| 17 | Alphabet Pyramid | Increasing then decreasing characters | `O(N^2)` | `O(1)` | [star17.java](./star17.java) |
+| 18 | Reverse Alphabet Pattern | Character offset calculation | `O(N^2)` | `O(1)` | [star18.java](./star18.java) |
+| 19 | Hollow Diamond | Boundary-based printing | `O(N^2)` | `O(1)` | [star19.java](./star19.java) |
+| 20 | Butterfly Pattern | Two mirrored triangles | `O(N^2)` | `O(1)` | [star20.java](./star20.java) |
+| 21 | Hollow Rectangle | Print only border cells | `O(N^2)` | `O(1)` | [star21.java](./star21.java) |
+| 22 | Concentric Square | Minimum distance from boundary | `O(N^2)` | `O(1)` | [star22.java](./star22.java) |
 
 ---
 
@@ -346,7 +346,7 @@ Concepts Learned
 
 ---
 
-## 18. Reverse Alphabet Triangle
+## 18. Reverse Alphabet Pattern
 
 ```
 E
@@ -488,6 +488,12 @@ or
 
 - Left Half
 - Right Half
+
+---
+
+### 5. Edge Cases & Gotchas
+- **Boundary logic** (like in Hollow Rectangle or Concentric Square) can cause off-by-one errors if loops don't exactly align from `0` to `n-1` (or `1` to `n`).
+- **Trailing Spaces**: Extra spaces printed at the end of lines don't matter visually in your own terminal, but they will often cause a "Presentation Error" on strict platforms like HackerRank or LeetCode. Only print necessary spaces.
 
 ---
 

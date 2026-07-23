@@ -4,9 +4,9 @@ My Data Structures and Algorithms journey using Java, following the Striver A2Z 
 
 ## Current Progress
 
-* Completed: Things to Know in Java
-* Currently Learning: Pattern Problems
-* Next Milestone: Basic Maths, Recursion and Hashing
+* Completed: Things to Know in Java, Patterns, Basic Maths, Recursion
+* Currently Learning: (Preparing for next topic)
+* Next Milestone: Hashing, Sorting Techniques
 
 ## About
 
@@ -38,8 +38,9 @@ Following the Striver A2Z DSA Sheet:
 ```text
 DSA-JAVA/
 │
-├── Patterns/
-|
+├── Basic-maths/
+├── recursion/
+├── star_patterns/
 └── README.md
 ```
 
@@ -57,8 +58,8 @@ More folders will be added as I progress through the roadmap.
 
 * [x] Things to Know in Java
 * [x] Patterns
-* [ ] Basic Maths
-* [ ] Recursion
+* [x] Basic Maths
+* [x] Recursion
 * [ ] Hashing
 * [ ] Sorting
 * [ ] Arrays
