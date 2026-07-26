@@ -22,7 +22,6 @@ public  static boolean ispalin(String s,int left,int right){
 }
 }
 /*
-5
-1 2 3 4 5
-op:5 4 3 2 1 
+sono
+op:false
 */
