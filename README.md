@@ -5,8 +5,8 @@ My Data Structures and Algorithms journey using Java, following the Striver A2Z 
 ## Current Progress
 
 * Completed: Things to Know in Java, Patterns, Basic Maths, Recursion
-* Currently Learning: (Preparing for next topic)
-* Next Milestone: Hashing, Sorting Techniques
+* Currently Learning: Hashing
+* Next Milestone: Sorting Techniques
 
 ## About
 

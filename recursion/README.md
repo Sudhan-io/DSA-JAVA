@@ -26,6 +26,7 @@ Recursion is a core concept where a function calls itself to solve smaller insta
 | 5 | Factorial of N | `f(n) = n * f(n - 1)` | `O(N)` | `O(N)` | [factorial.java](./factorial.java) |
 | 6 | Reverse Array | Swap `arr[left]` and `arr[right]`, then call `f(left+1, right-1)` | `O(N)` | `O(N)` | [recrevarray.java](./recrevarray.java) |
 | 7 | Check Palindrome String | Compare `s[left]` and `s[right]`. If equal, call `f(left+1, right-1)` | `O(N)` | `O(N)` | [ispalindromeRec.java](./ispalindromeRec.java) |
+| 8 | Nth Fibonacci Number | Multiple recursion calls: `f(n-1) + f(n-2)` | `O(2^N)` | `O(N)` | [Fibonacci.java](./Fibonacci.java) |
 
 ---
 
@@ -60,6 +61,7 @@ By placing the `System.out.println` *after* the recursive call, we can print fro
 ### 5. Edge Cases & Gotchas
 - **Stack Overflow**: The most common error in recursion. Always ensure the base case is reachable and inputs won't exceed the JVM's maximum stack depth.
 - **Pass by Value vs Reference**: In Java, arrays are passed by reference, so modifying `arr` in a recursive call modifies the original array. Strings and primitives are passed by value, meaning they don't change in the caller's scope unless returned.
+- **Multiple Recursion Time Complexity**: When a function calls itself multiple times (like in naive Fibonacci `f(n-1) + f(n-2)`), the time complexity grows exponentially, typically `O(2^N)`. This requires optimization (like Memoization in DP) for larger inputs.
 
 ---
 
@@ -74,6 +76,7 @@ Can I write the recursive function for these without looking?
 - [ ] Factorial of N
 - [ ] Reverse an array using recursion
 - [ ] Check if a string is palindrome using recursion
+- [ ] Find the Nth Fibonacci Number
 
 ---
 
