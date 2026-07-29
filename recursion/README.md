@@ -69,14 +69,14 @@ By placing the `System.out.println` *after* the recursive call, we can print fro
 
 Can I write the recursive function for these without looking?
 
-- [ ] Print Name N times
-- [ ] Print 1 to N
-- [ ] Print N to 1
-- [ ] Sum of first N numbers (Parameterized & Functional)
-- [ ] Factorial of N
-- [ ] Reverse an array using recursion
-- [ ] Check if a string is palindrome using recursion
-- [ ] Find the Nth Fibonacci Number
+- [x] Print Name N times
+- [x] Print 1 to N
+- [x] Print N to 1
+- [x] Sum of first N numbers (Parameterized & Functional)
+- [x] Factorial of N
+- [x] Reverse an array using recursion
+- [x] Check if a string is palindrome using recursion
+- [x] Find the Nth Fibonacci Number
 
 ---
 
