@@ -18,7 +18,16 @@ public class elemfreq {
             map.put(num,map.getOrDefault(num,0)+1);
         }
         for(Map.Entry<Integer,Integer> entry :map.entrySet()){
-            System.err.println(entry.getKey()+" "+entry.getValue());
+            System.out.println(entry.getKey()+" "+entry.getValue());
         }
     }
 }
+/*
+7
+1 1 1 1 3 4 3
+op:
+1 4
+3 2
+4 1
+
+ */
