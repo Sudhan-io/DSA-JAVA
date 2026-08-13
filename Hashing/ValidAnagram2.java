@@ -1,0 +1,33 @@
+import java.util.*;
+
+public class ValidAnagram2 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s=sc.nextLine();
+        String t=sc.nextLine();
+        System.out.println(isAnagram(s,t));
+        sc.close();
+    }
+    public static boolean isAnagram(String s, String t) {
+        f(s.length()!=t.length()) return false;
+        HashMap<Character,Integer> map1=new HashMap<>();
+        //HashMap<Character,Integer> map2=new HashMap<>();
+            for(int i=0;i<s.length();i++){
+                map1.put(s.charAt(i),map1.getOrDefault(s.charAt(i),0)+1);
+                map1.put(t.charAt(i),map1.getOrDefault(t.charAt(i),0)-1);
+            }
+        //return map1.equals(map2);
+        for(int num: map1.values()){
+            if(num!=0) return false;
+        }
+        return true;
+}}
+/*
+Example 1:
+Input: s = "racecar", t = "carrace"
+Output: true
+Example 2:
+Input: s = "jar", t = "jam"
+Output: false
+*/
