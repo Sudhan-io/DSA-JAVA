@@ -8,7 +8,7 @@ public class lnklst {
             this.next=null;
         }
     }
-    // to prit the entire linkedlist
+    // to print the entire linkedlist
     static void printlist(){
         Node temp=head;
         while(temp!=null){
@@ -37,6 +37,59 @@ public class lnklst {
         }
         temp.next=new Node(data);
     }
+    //insert at mid
+    public static void insertmid(int data, int pos){
+        Node nn=new Node(data);
+        Node temp=head;
+        for(int i=0;i<pos-1;i++){
+            temp=temp.next;
+        }
+        nn.next=temp.next;
+        temp.next=nn;
+    }
+    //delete the first node
+    static void delbeg(){
+        if(head==null) return;
+        head=head.next;
+    }
+    //del at end
+    public static void delatend(){
+        if(head==null || head.next==null){
+            head=null;
+            return;
+        }
+        Node temp=head;
+        while(temp.next.next!=null){
+            temp=temp.next;
+        }
+        temp.next=null;
+    }
+    //del a value
+    public static void delval(int data){
+        if(head==null){
+            return;
+        }
+        if(head.data==data){
+            head=head.next;
+            return;
+        }
+        Node temp=head;
+        while(temp.next.data!=data&&temp.next!=null){
+            temp=temp.next;
+        }
+        if(temp.next!=null){
+        temp.next=temp.next.next;}
+
+    }
+    public static void delatpos(int pos){
+        if(head==null) return;
+        Node temp=head;
+        for(int i=0;i<pos-1;i++){
+            temp=temp.next;
+        }
+        temp.next=temp.next.next;
+
+    } 
     static Node head;
     public static void main(String[] args) {
         head = new Node(5);
@@ -47,5 +100,13 @@ public class lnklst {
         printlist();
         insertend(21);
         printlist();
+        insertmid(45, 2);
+        printlist();
+        delatend();
+        printlist();
+        delval(15);
+        printlist();
+        delatpos(1);
+        printlist();x
     }
 }
